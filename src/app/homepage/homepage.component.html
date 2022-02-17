@@ -1,0 +1,203 @@
+
+
+<div class="main">	
+ 
+    <div class="w3_agile_main_grids">
+        <div class="w3layouts_main_grid">
+            <div class="w3layouts_main_grid_left">
+                <h2>{{location.name}}, {{location.country}}.</h2>
+                <p>{{current.condition.text}}</p>
+                <h3>Now</h3>
+                <h4>{{current.temp_c}}<span>°c</span></h4>
+            </div>
+            <div class="w3layouts_main_grid_right">
+                <canvas id="sleet" width="70" height="70"> </canvas>
+                <div id="w3time"></div>
+                <div class="w3layouts_date_year">
+                    <!-- date -->
+                       
+                    <!-- //date -->
+                </div>
+            </div>
+            <div class="clear"> </div>
+        </div>
+        
+        <div class="agileits_w3layouts_main_grid">
+            <div class="agile_main_grid_left">
+                <div class="wthree_main_grid_left_grid">
+                    <div class="w3ls_main_grid_left_grid1">
+                        <div class="w3l_main_grid_left_grid1_left">
+                            <h3>Humidity</h3>
+                            <p>{{current.humidity}} <span>%</span></p>
+                        </div>
+                        <div class="w3l_main_grid_left_grid1_right">
+                            <canvas id="partly-cloudy-day" width="45" height="45"></canvas>
+                        </div>
+                        <div class="clear"> </div>
+                    </div>
+                    <div class="w3ls_main_grid_left_grid1">
+                        <div class="w3l_main_grid_left_grid1_left">
+                            <h3>Cloud</h3>
+                            <p>{{current.cloud}} <span>%</span></p>
+                        </div>
+                        <div class="w3l_main_grid_left_grid1_right">
+                            <canvas id="cloudy" width="45" height="45"></canvas>
+                        </div>
+                        <div class="clear"> </div>
+                    </div>
+                    <div class="w3ls_main_grid_left_grid1">
+                        <div class="w3l_main_grid_left_grid1_left">
+                            <h3>Wind</h3>
+                            <p>{{current.wind_kph}} <span>Km/h</span></p>
+                        </div>
+                        <div class="w3l_main_grid_left_grid1_right">
+                            <canvas id="wind" width="45" height="45"></canvas>
+                        </div>
+                        <div class="clear"> </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w3_agileits_main_grid_right">
+                <div class="agileinfo_main_grid_right_grid">
+                    <div id="parentHorizontalTab">
+                        <ul class="resp-tabs-list hor_1">
+                            <li>Weather</li>
+                            <li>Quality</li>
+                            <li>Velocity</li>
+                        </ul>
+                        <div class="resp-tabs-container hor_1">
+                            <div class="w3_agileits_tabs">
+                                <div class="w3_main_grid_right_grid1">
+                                    <div class="w3_main_grid_right_grid1_left">
+                                        <p>Feelslike C</p>
+                                    </div>
+                                    <div class="w3_main_grid_right_grid1_right">
+                                        <p>{{current.feelslike_c}}<i>°c</i></p>
+                                    </div>
+                                    <div class="clear"> </div>
+                                </div>
+                                <div class="w3_main_grid_right_grid1">
+                                    <div class="w3_main_grid_right_grid1_left">
+                                        <p>Feelslike F</p>
+                                    </div>
+                                    <div class="w3_main_grid_right_grid1_right">
+                                        <p>{{current.feelslike_f}}<i>°c</i></p>
+                                    </div>
+                                    <div class="clear"> </div>
+                                </div>
+                                <div class="w3_main_grid_right_grid1">
+                                    <div class="w3_main_grid_right_grid1_left">
+                                        <p>Temp C</p>
+                                    </div>
+                                    <div class="w3_main_grid_right_grid1_right">
+                                        <p>{{current.temp_c}}<i>°c</i></p>
+                                    </div>
+                                    <div class="clear"> </div>
+                                </div>
+                                <div class="w3_main_grid_right_grid1">
+                                    <div class="w3_main_grid_right_grid1_left">
+                                        <p>Temp F</p>
+                                    </div>
+                                    <div class="w3_main_grid_right_grid1_right">
+                                        <p>{{current.temp_f}}<i>°c</i></p>
+                                    </div>
+                                    <div class="clear"> </div>
+                                </div>
+                            </div>
+                            <div class="w3_agileits_tabs">
+                                <div class="w3_main_grid_right_grid1">
+                                    <div class="w3_main_grid_right_grid1_left">
+                                        <p>Humidity</p>
+                                    </div>
+                                    <div class="w3_main_grid_right_grid1_right">
+                                        <p>{{current.humidity}}</p>
+                                    </div>
+                                    <div class="clear"> </div>
+                                </div>
+                                <div class="w3_main_grid_right_grid1">
+                                    <div class="w3_main_grid_right_grid1_left">
+                                        <p>Precip In</p>
+                                    </div>
+                                    <div class="w3_main_grid_right_grid1_right">
+                                        <p>{{current.precip_in}}</p>
+                                    </div>
+                                    <div class="clear"> </div>
+                                </div>
+                                <div class="w3_main_grid_right_grid1">
+                                    <div class="w3_main_grid_right_grid1_left">
+                                        <p>Precip Mm</p>
+                                    </div>
+                                    <div class="w3_main_grid_right_grid1_right">
+                                        <p>{{current.precip_mm}}</p>
+                                    </div>
+                                    <div class="clear"> </div>
+                                </div>
+                                <div class="w3_main_grid_right_grid1">
+                                    <div class="w3_main_grid_right_grid1_left">
+                                        <p>UltraViolate</p>
+                                    </div>
+                                    <div class="w3_main_grid_right_grid1_right">
+                                        <p>{{current.uv}}</p>
+                                    </div>
+                                    <div class="clear"> </div>
+                                </div>
+                            </div>
+                            <div class="w3_agileits_tabs">
+                                <div class="w3_main_grid_right_grid1">
+                                    <div class="w3_main_grid_right_grid1_left">
+                                        <p>Gust Mph</p>
+                                    </div>
+                                    <div class="w3_main_grid_right_grid1_right">
+                                        <p>{{current.gust_mph}}</p>
+                                    </div>
+                                    <div class="clear"> </div>
+                                </div>
+                                <div class="w3_main_grid_right_grid1">
+                                    <div class="w3_main_grid_right_grid1_left">
+                                        <p>Pressure In</p>
+                                    </div>
+                                    <div class="w3_main_grid_right_grid1_right">
+                                        <p>{{current.pressure_in}}</p>
+                                    </div>
+                                    <div class="clear"> </div>
+                                </div>
+                                
+                                <div class="w3_main_grid_right_grid1">
+                                    <div class="w3_main_grid_right_grid1_left">
+                                        <p>Wind Degree</p>
+                                    </div>
+                                    <div class="w3_main_grid_right_grid1_right">
+                                        <p>{{current.wind_degree}}</p>
+                                    </div>
+                                    <div class="clear"> </div>
+                                </div>
+                                <div class="w3_main_grid_right_grid1">
+                                    <div class="w3_main_grid_right_grid1_left">
+                                        <p>Wind Mph</p>
+                                    </div>
+                                    <div class="w3_main_grid_right_grid1_right">
+                                        <p>{{current.wind_mph}}</p>
+                                    </div>
+                                    <div class="clear"> </div>
+                                </div>
+                                <div class="w3_main_grid_right_grid1">
+                                    <div class="w3_main_grid_right_grid1_left">
+                                        <p>Wind Direction</p>
+                                    </div>
+                                    <div class="w3_main_grid_right_grid1_right">
+                                        <p>{{current.wind_dir}}</p>
+                                    </div>
+                                    <div class="clear"> </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="clear"> </div>
+        </div>
+    </div>
+  
+</div>
+
+
